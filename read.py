@@ -11,3 +11,10 @@ sum_len = 0
 for d in data:
 	sum_len = sum_len + len(d)
 print('每筆資料平均長度為', sum_len/len(data), '個字')
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有', len(new), '筆流言小於100個字')
+print(new[0])
+print(new[1])
