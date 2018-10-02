@@ -18,3 +18,10 @@ for d in data:
 print('一共有', len(new), '筆流言小於100個字')
 print(new[0])
 print(new[1])
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('一共有', len(good), '筆流言提到good這個字') 
+print(good[0])
